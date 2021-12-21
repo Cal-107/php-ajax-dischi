@@ -26,17 +26,15 @@ require_once __DIR__ . '/data/database.php';
             <div class="card-box">
                 <div class="card">
                     <ul>
-                        <li>
-                            <div class="img">
-                                <div class="img-box-2">
-                                    <img src="<?php echo $disc['poster']; ?>" alt="">
-                                </div>
+                        <li class="img">
+                            <div class="img-box-2">
+                                <img src="<?php echo $disc['poster']; ?>" alt="">
                             </div>
-                            <div class="title"><?php echo $disc['title']; ?></div>
-                            <div class="author"><?php echo $disc['author']; ?></div>
-                            <div class="year"><?php echo $disc['year']; ?></div>
-                            <div class="genre"><?php echo $disc['genre']; ?></div>
                         </li>
+                        <li class="title"><?php echo $disc['title']; ?></li>
+                        <li class="author"><?php echo $disc['author']; ?></li>
+                        <li class="year"><?php echo $disc['year']; ?></li>
+                        <li class="genre"><?php echo $disc['genre']; ?></li>
                     </ul>
                 </div>  
             </div>

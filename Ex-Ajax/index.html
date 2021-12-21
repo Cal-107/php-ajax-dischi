@@ -28,17 +28,15 @@
           >
             <div class="card">
               <ul>
-                <li>
-                  <div class="img">
-                    <div class="img-box-2">
-                      <img :src="disc.poster" :alt="disc.title" />
-                    </div>
+                <li class="img">
+                  <div class="img-box-2">
+                    <img :src="disc.poster" :alt="disc.title" />
                   </div>
-                  <div class="title">{{ disc.title }}</div>
-                  <div class="author">{{ disc.author }}</div>
-                  <div class="year">{{ disc.year }}</div>
-                  <div class="genre">{{ disc.genre }}</div>
                 </li>
+                <li class="title">{{ disc.title }}</li>
+                <li class="author">{{ disc.author }}</li>
+                <li class="year">{{ disc.year }}</li>
+                <li class="genre">{{ disc.genre }}</li>
               </ul>
             </div>
           </div>
