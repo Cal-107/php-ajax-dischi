@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- Vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <title>Php Dischi-Ajax</title>
   </head>
   <body>
-    <div id="app">
+    <div id="root">
       <header>
         <section>
           <div class="img-box">
@@ -20,19 +21,19 @@
 
       <main>
         <section class="card-container">
-          <div class="card-box">
+          <div class="card-box" v-for="(disc, i) in discs" :key="`album-id${i}`">
             <div class="card">
               <ul>
                 <li>
                   <div class="img">
                     <div class="img-box-2">
-                      <img src="" alt="" />
+                      <img :src="disc.poster" :alt="disc.title" />
                     </div>
                   </div>
-                  <div class="title"></div>
-                  <div class="author"></div>
-                  <div class="year"></div>
-                  <div class="genre"></div>
+                  <div class="title">{{ disc.title }}</div>
+                  <div class="author">{{ disc.author }}</div>
+                  <div class="year">{{ disc.year }}</div>
+                  <div class="genre">{{ disc.genre }}</div>
                 </li>
               </ul>
             </div>
